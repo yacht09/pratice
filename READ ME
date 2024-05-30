@@ -1,0 +1,13 @@
+# windows conda enviroment setup
+conda create -n intro python=3.12
+conda env list
+activate intro
+conda list
+conda install numpy pandas jupyter notebook git matplotlib seaborn pandas-profiling scipy
+conda list
+conda env export > environment.yml
+cat environment.yml
+deactivate
+conda env list
+
+# windows should be similar with some modification
